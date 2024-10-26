@@ -10,7 +10,7 @@ This repository contains coursework and assignments for the Back-End Web Develop
 - Error handling and debugging.
 
 ## Resources:
-For more information, visit the [Official Course Page](https://humber.ca/web-development).
+For more information, visit the [Official Course Page] https://mediaarts.humber.ca/programs/web-development.html.
 
 ![image](https://github.com/user-attachments/assets/b18c7c83-c42d-46b0-b39c-f3047d4d1e8a)
 
