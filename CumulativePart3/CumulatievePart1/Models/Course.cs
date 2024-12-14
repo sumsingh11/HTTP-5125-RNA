@@ -18,6 +18,6 @@ namespace CumulatievePart1.Models
         public int TeacherId { get; set; } 
 
         // Navigation property to the Teacher
-        public Teacher Teacher { get; set; }
+      
     }
 }
