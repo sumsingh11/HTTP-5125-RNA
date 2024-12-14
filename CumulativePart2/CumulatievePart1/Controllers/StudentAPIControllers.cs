@@ -61,7 +61,7 @@ namespace CumulatievePart1.Controllers
         /// <summary>
         /// Get a student name by their ID.
         /// </summary>
-        /// <param name="id">The ID of the student to retrieve</param>
+        /// <param name="id">The ID of the students to retrieve</param>
         /// <returns>Details of the student</returns>
         /// 
         [HttpGet]
@@ -106,8 +106,8 @@ namespace CumulatievePart1.Controllers
                 //Establish a new command (query) for our database
                 MySqlCommand Command = Connection.CreateCommand();
 
-                // CURRENT_DATE() for the author join date in this context
-                // Other contexts the join date may be an input criteria!
+                // CURRENT_DATE() for the author joining dates in this context
+                // Other contexts the joining date may be an input criteria!
                 Command.CommandText = "insert into students (studentfname, studentlname, studentnumber, enroldate) values (@studentfname, @studentlname, @studentnumber, @enroldate)";
                 Command.Parameters.AddWithValue("@studentfname", StudentData.StudentFName);
                 Command.Parameters.AddWithValue("@studentlname", StudentData.StudentLName);

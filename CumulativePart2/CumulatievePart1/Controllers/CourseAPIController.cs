@@ -130,7 +130,7 @@ namespace CumulatievePart1.Controllers
             return 0;
         }
          [HttpDelete(template:"DeleteCourse/{CourseId}")]
-        public int DeleteCourse(int StudentId)
+        public int DeleteCourse(int CourseId)
         {
             // 'using' will close the connection after the code executes
             using (MySqlConnection Connection = _context.AccessDatabase())
@@ -141,7 +141,7 @@ namespace CumulatievePart1.Controllers
 
                 
                 Command.CommandText = "delete from courses where courseid=@id";
-                Command.Parameters.AddWithValue("@id", StudentId);
+                Command.Parameters.AddWithValue("@id", CourseId);
                 return Command.ExecuteNonQuery();
 
             }

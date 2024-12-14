@@ -2,7 +2,6 @@
 
 <h1>Course List</h1>
 <a href="/CoursePage/New" class="btn btn-primary btn-sm">Create New</a>
-
 <table class="table">
     <thead>
         <tr>
@@ -24,8 +23,10 @@
                 <td>@course.StartDate.ToShortDateString()</td>
                 <td>@course.FinishDate.ToShortDateString()</td>
                 <td>
-                    <a href="@Url.Action("Show", "CoursePage", new { id = course.CourseId })">View Details</a>,
-                    <a href="/CoursePage/DeleteConfirm/@course.CourseId" class="btn btn-danger btn-sm ml-2">Delete</a>
+                    <a href="@Url.Action("Show", "CoursePage", new { id = course.CourseId })">View Details</a><br>
+
+                    <a href="/CoursePage/DeleteConfirm/@course.CourseId"> Delete</a>
+
                 </td>
             </tr>
         }
