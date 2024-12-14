@@ -1,0 +1,97 @@
+@model CumulativePart1.Models.Teacher
+
+<style>
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        background-color: #e9ecef;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        color: #343a40;
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: #e63946;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 15px;
+        color: #495057;
+        margin-bottom: 25px;
+    }
+
+    .button-container {
+        margin-top: 25px;
+    }
+
+    .btn-delete {
+        padding: 10px 20px;
+        background-color: #e63946;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-delete:hover {
+        background-color: #d32f2f;
+        box-shadow: 0 4px 6px rgba(230, 57, 70, 0.3);
+        transform: translateY(-1px);
+    }
+
+    nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .navlink {
+        font-size: 14px;
+        color: #0077b6;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .navlink:hover {
+        text-decoration: underline;
+        color: #023e8a;
+    }
+</style>
+
+<div class="container">
+    <nav>
+        <a class="navlink" href="/TeacherPage/Show/@Model.TeacherId">Cancel</a>
+    </nav>
+
+    <h2>Are you sure you want to delete @Model.TeacherFName @Model.TeacherLName?</h2>
+    <p>This action is irreversible. Proceed with caution.</p>
+
+    <div class="button-container">
+        <form method="POST" action="/TeacherPage/Delete/@Model.TeacherId">
+            <button type="submit" class="btn-delete">
+                Confirm Delete
+            </button>
+        </form>
+    </div>
+</div>

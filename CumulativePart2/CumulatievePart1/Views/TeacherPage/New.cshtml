@@ -1,0 +1,115 @@
+@model CumulatievePart1.Models.Teacher
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Teacher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Create New Teacher</h2>
+        <form method="POST" action="/TeacherPage/Create">
+            <!-- First Name -->
+            <div class="form-group">
+                <label for="TeacherFname">First Name:</label>
+                <input type="text" id="TeacherFname" name="TeacherFname" 
+                       value="@Model?.TeacherFName" placeholder="Enter first name" required>
+            </div>
+
+            <!-- Last Name -->
+            <div class="form-group">
+                <label for="TeacherLname">Last Name:</label>
+                <input type="text" id="TeacherLname" name="TeacherLName" 
+                       value="@Model?.TeacherLName" placeholder="Enter last name" required>
+            </div>
+
+            <!-- Salary -->
+            <div class="form-group">
+                <label for="TeacherSalary">Salary:</label>
+                <input type="number" id="TeacherSalary" name="TeacherSalary" 
+                       value="@Model?.TeacherSalary" placeholder="Enter salary" required>
+            </div>
+
+            <!-- Hiring Date -->
+            <div class="form-group">
+                <label for="HiringDate">Hiring Date:</label>
+                <input type="date" id="HiringDate" name="HiringDate" 
+                       value="@Model?.TeacherHireDate?.ToString("yyyy-MM-dd")" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Create Teacher">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+using namespace CumulatievePart1
+{
+    
+}
