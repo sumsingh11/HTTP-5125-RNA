@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sumit/Downloads/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj": {}
+    "/Users/sumit/Documents/Back-End Web Development 1 - HTTP-5125-RNA/HTTP-5125-RNA/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj": {}
   },
   "projects": {
-    "/Users/sumit/Downloads/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj": {
+    "/Users/sumit/Documents/Back-End Web Development 1 - HTTP-5125-RNA/HTTP-5125-RNA/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sumit/Downloads/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj",
+        "projectUniqueName": "/Users/sumit/Documents/Back-End Web Development 1 - HTTP-5125-RNA/HTTP-5125-RNA/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj",
         "projectName": "CumulatievePart1",
-        "projectPath": "/Users/sumit/Downloads/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj",
+        "projectPath": "/Users/sumit/Documents/Back-End Web Development 1 - HTTP-5125-RNA/HTTP-5125-RNA/CumulativePart2/CumulatievePart1/CumulatievePart1.csproj",
         "packagesPath": "/Users/sumit/.nuget/packages/",
-        "outputPath": "/Users/sumit/Downloads/CumulativePart2/CumulatievePart1/obj/",
+        "outputPath": "/Users/sumit/Documents/Back-End Web Development 1 - HTTP-5125-RNA/HTTP-5125-RNA/CumulativePart2/CumulatievePart1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sumit/.nuget/NuGet/NuGet.Config"
